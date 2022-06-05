@@ -1,0 +1,1 @@
+let name=prompt("Как вас зовут?"),age,flag=!0;for(;flag;)age=parseInt(prompt("Сколько вам лет?")),isNaN(age)||age<=0?alert("Введите корректный возраст"):(alert("Привет, "+name+" , тебе уже "+age+" лет!"),flag=!1);

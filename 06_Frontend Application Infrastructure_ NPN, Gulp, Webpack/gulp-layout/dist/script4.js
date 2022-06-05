@@ -1,0 +1,1 @@
+let array=[];for(let o=1;o<=100;o++)array.push(o);function fizzBuzz(z){for(let o=0;o<z.length;o++)z[o]%15==0?console.log("FizzBuzz"):z[o]%3==0?console.log("Fizz"):z[o]%5==0?console.log("Buzz"):console.log(z[o])}console.log(array),fizzBuzz(array);
