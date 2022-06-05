@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="weather">
+    <div class="border">
+        <div class="weather__inner">
+            <div class="current">
+                <div class="greetings">
+                    Hello.<br>
+                    Get the weather for today with just one click!
+                    <div>
+                        <img src="images/01d.png" width="70px">
+                        <img src="images/02d.png" width="70px">
+                        <img src="images/09d.png" width="70px">
+                    </div>
+                </div>
+                <div class="current__city" id="sity"></div>
+                <div class="current__description"></div>
+                <div class="current__temperature"></div>
+            </div>
+
+            <div class="forecast">
+                <div class="forecast__item">
+                    <div class="forecast__icon">
+                        <ul class="features">
+                            <li>
+                                <img id="img" src="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><p>Enter the name of the city</p></div>
+
+        <div>
+            <input class="entryField" type="text" value="Moscow">
+            <button class="enterButton" id="search">&#9745;</button>
+        </div>
+    </div>
+
+</div>
+<script src='script.js'></script>
+</body>
+</html>

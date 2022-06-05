@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  html {
+    font-family: Roboto, sans-serif;
+  }
+  
+  .weather {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(360deg, #3594bf 0%, rgba(255, 255, 255, 0) 100%), #53a6cb;
+    text-align: center;
+  }
+  
+  .border {
+      border: 2px solid white;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 40px;
+  }
+
+  .weather__inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  .current {
+    margin-bottom: 2em;
+  }
+  
+  .current__city {
+    font-size: 3em;
+  }
+  
+  .current__description {
+    font-size: 1.5em;
+  }
+  
+  .current__temperature {
+    font-size: 4em;
+  }
+  
+  .forecast__icon {
+    width: 50px;
+    height: 50px;
+    margin: 2em auto 4em auto;
+  }
+
+  .entryField {
+      background: none;
+      border: 2px solid white;
+      border-radius: 5px;
+  }
+
+  .enterButton {
+      width: 22px;
+      height: 22px;
+      background: white;
+      color: #3594bf;
+  }
+
+  .features ul, .features li {
+    list-style-type: none;
+  }
