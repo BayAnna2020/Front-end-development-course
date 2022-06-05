@@ -1,0 +1,47 @@
+.image {
+    width: 10rem;
+    margin: 5px auto;
+    text-decoration: none;
+}
+
+.card {
+    width: 16rem;
+    margin: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.navlink {
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.link:hover {
+    color: black;
+    /* Цвет ссылки при наведении на нее курсора мыши */
+    text-decoration: none;
+    /* Добавляем подчеркивание */
+}
+
+.text {
+    text-align: center;
+    color: orange;
+    text-decoration: none;
+}
+
+.text2 {
+    text-align: center;
+    text-decoration: none;
+}
