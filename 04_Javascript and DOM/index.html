@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper" id="blah">
+    
+        <table class="table">
+            <caption>Расписание</caption> 
+            <tr>
+                <th>понедельник</th>
+                <th>вторник</th>
+                <th>среда</th>
+                <th>четверг</th>
+                <th>пятница</th>
+                <th>суббота</th>
+                <th>заметки</th>
+                <th>удалить</th>
+            </tr>
+            <tr>
+                <td>Русский</td>
+                <td>Математика</td>
+                <td>Физика</td>
+                <td>Химия</td>
+                <td>Русский</td>
+                <td>Математика</td>
+                <td></td>
+                <td><input class="deleteLine" type="button" value="&#8722;" onclick="deleteRow(this)"/></td>
+            </tr>
+            <tr>
+                <td>Математика</td>
+                <td>Русский</td>
+                <td>Физкультура</td>
+                <td>Русский</td>
+                <td>Химия</td>
+                <td>Математика</td>
+                <td></td>
+                <td><input class="deleteLine" type="button" value="&#8722;" onclick="deleteRow(this)"/></td>
+            </tr>
+            <tr>
+                <td>Математика</td>
+                <td>Литература</td>
+                <td>ОБЖ</td>
+                <td>Обществознание</td>
+                <td>Биология</td>
+                <td>Физика</td>
+                <td></td>
+                <td><input class="deleteLine" type="button" value="&#8722;" onclick="deleteRow(this)"/></td>
+            </tr>
+            <tr>
+                <td>Физкультура</td>
+                <td>Обществознание</td>
+                <td>Математика</td>
+                <td>История</td>
+                <td>Обществознание</td>
+                <td>...</td>
+                <td></td>
+                <td><input class="deleteLine" type="button" value="&#8722;" onclick="deleteRow(this)"/></td>
+            </tr>
+        </table>
+        <div class="addingLines">
+            <form action="">
+                <select name="prof">
+                    <option disabled>понедельник</option>
+                    <option value="Руссий">Руссий</option>
+                    <option value="Математика">Математика</option>
+                    <option value="Литература">Литература</option>
+                    <option value="Физкультура">Физкультура</option>
+                    <option value="...">...</option>
+                  </select>
+
+                <select name="prof">
+                    <option disabled>вторник</option>
+                    <option value="Руссий">Руссий</option>
+                    <option value="Математика">Математика</option>
+                    <option value="Литература">Литература</option>
+                    <option value="Физкультура">Физкультура</option>
+                    <option value="...">...</option>
+                  </select>
+
+                <select name="prof">
+                    <option disabled>среда</option>
+                    <option value="Руссий">Руссий</option>
+                    <option value="Математика">Математика</option>
+                    <option value="Литература">Литература</option>
+                    <option value="Физкультура">Физкультура</option>
+                    <option value="...">...</option>
+                  </select>
+
+                <select name="prof">
+                    <option disabled>четверг</option>
+                    <option value="Руссий">Руссий</option>
+                    <option value="Математика">Математика</option>
+                    <option value="Литература">Литература</option>
+                    <option value="Физкультура">Физкультура</option>
+                    <option value="...">...</option>
+                  </select>
+
+                <select name="prof">
+                    <option disabled>пятница</option>
+                    <option value="Руссий">Руссий</option>
+                    <option value="Математика">Математика</option>
+                    <option value="Литература">Литература</option>
+                    <option value="Физкультура">Физкультура</option>
+                    <option value="...">...</option>
+                  </select>
+
+                <select name="prof">
+                  <option disabled>суббота</option>
+                  <option value="Руссий">Руссий</option>
+                  <option value="Математика">Математика</option>
+                  <option value="Литература">Литература</option>
+                  <option value="Физкультура">Физкультура</option>
+                  <option value="...">...</option>
+                </select>
+
+                <input type="text" placeholder="сообщение"/>
+                <input class="deleteLine" type="button" value="&#8722;" onclick="deleteRow(this)"/>
+                
+                
+                <input class="pluse" type="submit" value="&#5161;" onclick="deleterow(tableID)"/>
+                
+              </form>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
