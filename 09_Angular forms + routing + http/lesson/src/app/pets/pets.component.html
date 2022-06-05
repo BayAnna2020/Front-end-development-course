@@ -1,0 +1,27 @@
+<div>
+  <form>
+    <label>Добавить котика:
+      <input #petName placeholder="Имя" type="text" name="name" 
+      required minlength="1"/>
+    </label>
+    <!-- (click) передает входное значение в add (), а затем очищает вход -->
+     <button (click)="add(petName.value); petName.value=''">
+      &#10004;
+    </button>
+  </form>
+</div>
+
+<div >
+  <ul class="pets">
+    <li *ngFor="let pet of pets">
+      <a routerLink="/detail/{{pet.id}}">
+        <span class="badge">{{pet.id}}.</span> {{pet.name}}
+      </a> 
+        <button class="delete" title="delete pet"
+        (click)="delete(pet)">x</button>
+    </li>
+  </ul>
+</div>
+
+<!-- <app-pet-detail [pet]="selectedPet" (addEvent)="feedTheCat()"></app-pet-detail> -->
+

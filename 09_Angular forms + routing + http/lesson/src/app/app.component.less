@@ -1,0 +1,58 @@
+//compress: true
+@import url(pets/pets.component.less);
+
+@darkOrange: #f59500;
+@lightOrange: #f5ae00;
+
+h1 {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+    background: @dirtyBlue;
+  }
+
+  nav {
+    text-align: left;
+  }
+  
+  nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #607d8b;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+ 
+  body, input[type="text"], button {
+    color: #888;
+    font-family: Cambria, Georgia;
+  }
+  /* everywhere else */
+
+  .button_conditionCat{
+    margin: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 6px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+  }
+  .button_conditionCat:hover { background: linear-gradient(@lightOrange, @darkOrange) @lightOrange; }
+  .button_conditionCat:active { background: linear-gradient(@darkOrange, @lightOrange) @darkOrange; }

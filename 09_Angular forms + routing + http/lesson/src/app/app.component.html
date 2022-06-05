@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+
+<app-pet-search></app-pet-search>
+
+  <button class="button_conditionCat" *ngIf="conditionCat" (click)='toggle()'>Скрыть котиков</button>
+  <button class="button_conditionCat" *ngIf="!conditionCat" (click)='toggle()'>Показать котиков</button>
+  <div *ngIf="conditionCat"><router-outlet></router-outlet></div>

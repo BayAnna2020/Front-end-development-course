@@ -1,0 +1,20 @@
+<div *ngIf="pet">
+    <h2>Это {{pet.name}}</h2>
+    <div><img src="assets/img/26.jpg" alt="котик" width="200px"> </div>
+    <div>
+      <div>id: {{pet.id}}</div>
+        <div>Пол: {{pet.gender}}</div>
+        <div>Порода: {{pet.species}}</div>
+        <div>Характер: {{pet.character}}</div>
+        <div>Вес: {{pet.weight}} кг.</div>
+        <div>Окрас: {{pet.color}}</div>
+      </div>
+    <div>
+      <label>Имя:
+        <input [(ngModel)]="pet.name" placeholder="name"/>
+      </label>
+      <!-- <button (click)="feedTheCat()">Покормить</button> -->
+    </div>
+</div>
+<button (click)="goBack()">Назад</button>
+<button (click)="save()">Сохранить</button>
